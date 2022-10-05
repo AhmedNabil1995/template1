@@ -1,0 +1,262 @@
+:root{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    margin: 0;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+}
+
+header::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+header div.logo{
+    float: left;
+    font-size: 30px;
+    color: #fff;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    list-style-type: none;
+    color: #ddd;
+}
+
+header nav ul li{
+    float: left;
+    padding:18px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a:hover{
+    color: #ddd;
+}
+
+section.about{
+    padding-top: 100px;
+    background-image: url('/images/bg.jpg');
+    height: 380px;
+    text-align: center;
+}
+
+section.about p{
+line-height: 2;
+font-size: 28px;
+color: #fff;
+}
+
+
+section.about button{
+    background-color: #D84780;
+    color: #fff;
+    border: 3px solid #D84780;
+    font-size: 28px;
+    padding: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+section.about button:hover{
+    background-color: transparent;
+}
+
+section.blog{
+    background-color: #222;
+    padding-top: 20px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+section.blog::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+section.blog div.part{
+    width: 30%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+section.blog div.part img{
+    width: 100%;
+}
+
+section.blog div.part p{
+    padding: 10px 15px;
+}
+
+section.blog div.part button{
+    background-color: #D84780;
+    color: #fff;
+    border: 3px solid #D84780;
+    font-size: 20px;
+    padding:10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+section.blog div.part button:hover{
+    background-color: transparent;
+    color: #D84780;   
+}
+
+section.write{
+    background-color: #222;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+section.write::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+div.writting{
+    width: 40%;
+    color: white;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+div.writting div.icon{
+    float: left;
+    height: 100%;
+    position: relative;
+    top: 20px;
+}
+div.writting div.description{
+    margin-left: 80px;
+}
+
+div.description h2{
+    font-size: 18px;
+}
+
+div.description p{
+    color: #888;
+}
+
+section.contact{
+    background-color: #D84780;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    color: white;
+}
+
+section.contact h2{
+    font-size: 30px;
+}
+
+section.contact p{
+    font-size: 20px;
+    word-spacing: 8px;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+}
+
+form input{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+form input:hover,form input:focus{
+    border-left: 5px solid black;
+}
+
+form textarea{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+form button{
+    font-size: 20px;
+    color: #ddd;
+    background-color: transparent;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover{
+    border-color: black;
+}
+
+
+footer{
+    background-color: black;
+    padding: 50px;
+    color: #aaa;
+    text-align: center;
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #aaa;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px
+}
+
+footer li:hover{
+    cursor: pointer;
+    border-color: white;
+    color: white;
+}
